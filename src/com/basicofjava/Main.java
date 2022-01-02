@@ -4,69 +4,158 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-    // Taking Input in Java
-//    Scanner sc = new Scanner(System.in);
-//    String name = sc.next(); // this will only take one input and don't take any other spaces i.e Kunal Choudhary
-//    String name = sc.nextLine();
-//    System.out.print(name);
+        // Conditional Statements - Java
+        // Scanner sc = new Scanner(System.in);
+        // int age = sc.nextInt();
 
-//    More input methods
-//        nextInt()
-//        nextFloat()
-//        nextDouble()
+        // if(age > 18) {
+        // System.out.println("Adult");
+        // } else {
+        // System.out.println("You're not adult.");
+        // }
+        // Program to Check whether the Given Number is Odd/Even
+        // Scanner sc = new Scanner(System.in);
+        // int number = sc.nextInt();
+        // if (number % 2 == 0) {
+        // System.out.println("Given Number is Even number.");
+        // } else {
+        // System.out.println("Given Number is Odd number.");
+        // }
 
-	// output
-    // System.out.println("*");
-    // System.out.println("**");
-    // System.out.println("***");
-    // System.out.println("****");
-    // System.out.println("*****");
+        // Program to Check whether the Given number is Greater or Lower or Equal
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
 
-    // System.out.println("*\n**");
+        // if(a == b) {
+        // System.out.println("Equal");
+        // }
+        // else {
+        // if (a > b) {
+        // System.out.println("A is Greater than B");
+        // } else {
+        // System.out.println("A is Small than B");
+        // }
+        // }
 
-    // Variables
-   // int a = 10;
-   // int b = 25;
-   // int sum = a + b;
-   // System.out.println(sum);
-   // int diff = b - a ;
-   // System.out.println(diff);
-   // int mul = a*b;
-   // System.out.print(mul);
+        // Optimized Code for the same as above
+        // if(a == b) {
+        // System.out.println("Equal");
+        // } else if(a > b) {
+        // System.out.println("A is Greater than B");
+        // }
+        // else {
+        // System.out.println("A is Small than B");
+        // }
 
-   // Quiz to calculate a x b / a - b; where a = 10, b = 5;
-   // int a = 10;
-   // int b = 5;
-   // int answer = (a * b) / (a - b);
-   // System.out.print(answer);
-//        Take two variable 'a' & 'b' and print their sum
-//        Scanner sc = new Scanner(System.in);
-//        int a = sc.nextInt();
-//        int b = sc.nextInt();
-//        int sum = a + b;
-//        System.out.println(sum);
+        // switch statetment
 
-//        Make a program that takes the radius of a circle as input, calculates
-//        its radius and area and prints it as output to the user2.
-//        Make a program that takes the radius of a circle as
-//        input, calculates its radius and area and prints it as output to the user
-//        Scanner sc = new Scanner(System.in);
-//        float radius = sc.nextFloat();
-//        double pie = 3.14;
-//        double area = (pie) * (radius * radius);
-//        System.out.println(area);
-//      Print a table that is given by User
-//        Scanner sc = new Scanner(System.in);
-//        int num = sc.nextInt();
-//        System.out.println(num * 1);
-//        System.out.println(num * 2);
-//        System.out.println(num * 3);
-//        System.out.println(num * 4);
-//        System.out.println(num * 5);
-//        System.out.println(num * 6);
-//        System.out.println(num * 7);
-//        System.out.println(num * 8);
-//        System.out.println(num * 9);
-//        System.out.println(num * 10);
+        // Scanner sc = new Scanner(System.in);
+        // int button = sc.nextInt();
+
+        // if(button == 1) {
+        // System.out.println("Hello");
+        // } else if(button == 2) {
+        // System.out.println("Namaste");
+        // } else if(button == 3) {
+        // System.out.println("Bonjour");
+        // }
+        // else {
+        // System.out.println("Invalid Button.");
+        // }
+
+        // Scanner sc = new Scanner(System.in);
+        // int button = sc.nextInt();
+
+        // switch (button) {
+        //     case 1:
+        //         System.out.println("Hello");
+        //         break;
+        //     case 2:
+        //         System.out.println("Namaste");
+        //         break;
+        //     case 3:
+        //         System.out.println("Bonjour");
+        //         break;
+
+        //     default:
+        //         System.out.println("Invalid Button");
+        //         break;
+        // }
+
+        // Create a Calculator using the switch case statement
+
+        // Scanner sc = new Scanner(System.in);
+        // int num1 = sc.nextInt();
+        // int num2 = sc.nextInt();
+        // int button = sc.nextInt();
+
+        // switch (button) {
+        //     case 1:
+        //         System.out.println(num1+num2);
+        //         break;
+        //     case 2:
+        //         System.out.println(num1-num2);
+        //         break;
+        //     case 3:
+        //         System.out.println(num1*num2);
+        //         break;
+        //     case 4:
+        //         System.out.println(num1%num2);
+        //         break;
+        
+        //     default:
+        //     System.out.println("Please select the valid input betweeen 1 to 4 to perform some operation..");
+        //         break;
+        // }
+
+        // Ask the user to enter the number of the month & print the name of the month. 
+        // For eg - For ‘1’ print ‘January’, ‘2’ print ‘February’ & so on.
+
+        Scanner sc = new Scanner(System.in);
+        int choice = sc.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.println("January");
+                break;
+            case 2:
+                System.out.println("February");
+                break;
+            case 3:
+                System.out.println("March");
+                break;
+            case 4:
+                System.out.println("April");
+                break;
+            case 5:
+                System.out.println("May");
+                break;
+            case 6:
+                System.out.println("June");
+                break;
+            case 7:
+                System.out.println("July");
+                break;
+            case 8:
+                System.out.println("August");
+                break;
+            case 9:
+                System.out.println("September");
+                break;
+            case 10:
+                System.out.println("October");
+                break;
+            case 11:
+                System.out.println("November");
+                break;
+            case 12:
+                System.out.println("December");
+                break;
+        
+            default:
+                System.out.println("Please enter valid input to get the Months name between 1 to 12...!");
+                break;
+        }
     }
 }
