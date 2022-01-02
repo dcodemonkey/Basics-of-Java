@@ -32,7 +32,7 @@ public class Main {
    // int mul = a*b;
    // System.out.print(mul);
 
-   // Quiz to calcuate a x b / a - b; where a = 10, b = 5;
+   // Quiz to calculate a x b / a - b; where a = 10, b = 5;
    // int a = 10;
    // int b = 5;
    // int answer = (a * b) / (a - b);
