@@ -3,159 +3,90 @@ package com.basicofjava;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
-        // Conditional Statements - Java
-        // Scanner sc = new Scanner(System.in);
-        // int age = sc.nextInt();
+  public static void main(String[] args) {
 
-        // if(age > 18) {
-        // System.out.println("Adult");
-        // } else {
-        // System.out.println("You're not adult.");
-        // }
-        // Program to Check whether the Given Number is Odd/Even
-        // Scanner sc = new Scanner(System.in);
-        // int number = sc.nextInt();
-        // if (number % 2 == 0) {
-        // System.out.println("Given Number is Even number.");
-        // } else {
-        // System.out.println("Given Number is Odd number.");
-        // }
+    // for loop in Java
+    // for(int counter = 1; counter <= 5; counter++) {
+    // System.out.println("Hello Java");
+    // }
 
-        // Program to Check whether the Given number is Greater or Lower or Equal
-        // Scanner sc = new Scanner(System.in);
-        // int a = sc.nextInt();
-        // int b = sc.nextInt();
+    // for(int counter = 0; counter <= 10; counter++) {
+    // System.out.println(counter);
+    // }
 
-        // if(a == b) {
-        // System.out.println("Equal");
-        // }
-        // else {
-        // if (a > b) {
-        // System.out.println("A is Greater than B");
-        // } else {
-        // System.out.println("A is Small than B");
-        // }
-        // }
+    // while loop in java
+    // int counter = 0;
+    // while(counter <=10) {
+    // System.out.println(counter);
+    // counter++;
+    // }
 
-        // Optimized Code for the same as above
-        // if(a == b) {
-        // System.out.println("Equal");
-        // } else if(a > b) {
-        // System.out.println("A is Greater than B");
-        // }
-        // else {
-        // System.out.println("A is Small than B");
-        // }
+    // do while loop in Java
+    // int counter = 0;
+    // do {
+    // System.out.println(counter);
+    // counter++;
+    // } while(counter <= 10);
 
-        // switch statetment
+    // Print the Sum of First n Natural Numbers.
+    // Scanner sc = new Scanner(System.in);
+    // int num = sc.nextInt();
+    // int sum = 0;
+    // for(int i = 0; i<=num; i++) {
+    // sum = i+sum;
+    // }
+    // System.out.println(sum);
 
-        // Scanner sc = new Scanner(System.in);
-        // int button = sc.nextInt();
+    // Print the table of a number input by the user.
+    // Scanner sc= new Scanner(System.in);
+    // int num = sc.nextInt();
 
-        // if(button == 1) {
-        // System.out.println("Hello");
-        // } else if(button == 2) {
-        // System.out.println("Namaste");
-        // } else if(button == 3) {
-        // System.out.println("Bonjour");
-        // }
-        // else {
-        // System.out.println("Invalid Button.");
-        // }
+    // for(int i = 1; i<=10; i++){
+    // System.out.println(num * i);
+    // }
+    // Print all even numbers till n
+    // Scanner sc = new Scanner(System.in);
+    // int num = sc.nextInt();
 
-        // Scanner sc = new Scanner(System.in);
-        // int button = sc.nextInt();
+    // for(int i = 1; i <= num; i++){
+    // if(i % 2 == 0) {
+    // System.out.println(i);
+    // }
+    // }
 
-        // switch (button) {
-        //     case 1:
-        //         System.out.println("Hello");
-        //         break;
-        //     case 2:
-        //         System.out.println("Namaste");
-        //         break;
-        //     case 3:
-        //         System.out.println("Bonjour");
-        //         break;
+    /*
+     * Make a menu driven program. The user can enter 2 numbers, either 1 or 0.
+     * If the user enters 1 then keep taking input from the user
+     * for a student’s marks(out of 100).
+     * If they enter 0 then stop.
+     * If he / she scores :
+     * Marks >= 90 -> print “This is Good”
+     * 89 >= Marks >= 60 -> print “This is also Good”
+     * 59 >= Marks >= 0 -> print “This is Good as well”
+     * Because marks don’t matter but our effort does.
+     */
 
-        //     default:
-        //         System.out.println("Invalid Button");
-        //         break;
-        // }
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
 
-        // Create a Calculator using the switch case statement
-
-        // Scanner sc = new Scanner(System.in);
-        // int num1 = sc.nextInt();
-        // int num2 = sc.nextInt();
-        // int button = sc.nextInt();
-
-        // switch (button) {
-        //     case 1:
-        //         System.out.println(num1+num2);
-        //         break;
-        //     case 2:
-        //         System.out.println(num1-num2);
-        //         break;
-        //     case 3:
-        //         System.out.println(num1*num2);
-        //         break;
-        //     case 4:
-        //         System.out.println(num1%num2);
-        //         break;
-        
-        //     default:
-        //     System.out.println("Please select the valid input betweeen 1 to 4 to perform some operation..");
-        //         break;
-        // }
-
-        // Ask the user to enter the number of the month & print the name of the month. 
-        // For eg - For ‘1’ print ‘January’, ‘2’ print ‘February’ & so on.
-
-        Scanner sc = new Scanner(System.in);
-        int choice = sc.nextInt();
-
-        switch (choice) {
-            case 1:
-                System.out.println("January");
-                break;
-            case 2:
-                System.out.println("February");
-                break;
-            case 3:
-                System.out.println("March");
-                break;
-            case 4:
-                System.out.println("April");
-                break;
-            case 5:
-                System.out.println("May");
-                break;
-            case 6:
-                System.out.println("June");
-                break;
-            case 7:
-                System.out.println("July");
-                break;
-            case 8:
-                System.out.println("August");
-                break;
-            case 9:
-                System.out.println("September");
-                break;
-            case 10:
-                System.out.println("October");
-                break;
-            case 11:
-                System.out.println("November");
-                break;
-            case 12:
-                System.out.println("December");
-                break;
-        
-            default:
-                System.out.println("Please enter valid input to get the Months name between 1 to 12...!");
-                break;
-        }
+    switch (num) {
+      case 0:
+        System.out.println("Thanks..");
+        break;
+      case 1:
+        do {
+          Scanner in = new Scanner(System.in);
+          int marks = in.nextInt();
+          if (marks >= 90) {
+            System.out.println("This is Good.");
+          } else if (marks <= 89 && marks >= 60) {
+            System.out.println("This is also good");
+          }
+        } while (num == 1);
+        break;
+      default:
+        System.out.println("Please enter the number the number between 0 and 1");
     }
+  }
+
 }
