@@ -225,6 +225,8 @@ public class PatternPractice {
     // System.out.println();
     // }
 
+    // Print Diamonds Star
+
     int n = 5;
 
     // Upper Half
